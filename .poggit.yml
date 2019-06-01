@@ -1,5 +1,6 @@
 --- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/roxtigger2003/ReportGUI
 branches:
 - master
-projects: []
+projects: 
+- https://github.com/roxtigger2003/ReportGUI/tree/master/ReportGUI
 ...
