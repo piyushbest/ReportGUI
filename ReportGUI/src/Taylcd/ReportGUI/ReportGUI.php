@@ -107,7 +107,7 @@ class ReportGUI extends PluginBase implements Listener
 
     private function sendReportGUI(Player $sender)
     {
-        $form = $this->FormAPI->createCustomForm(function(Player $sender, array $data)
+        $form = $this->FormAPI->createCustomForm(function(Player $sender, ?int $data)
         {
             if(count($data) < 2) return;
             if(!$data[1] || !$this->getServer()->getOfflinePlayer($data[1])->getFirstPlayed())
